@@ -40,10 +40,10 @@ Me interesan la **seguridad del software**, la **IA aplicada a la educación** y
 
 | Proyecto | Descripción | Repositorio |
 |---|---|---|
-| 🎮 **RexGames** | Tienda de videojuegos en línea con arquitectura por capas. | [Ver repo](https://github.com/Boris2403/RexGames) |
-| 🚗 **AutoPremium** | Plataforma de compra y venta de autos. | [Ver repo](https://github.com/jonathan-jiron/AutoPremium) |
-| 💼 **Gestión de Seguros Médicos** | Integración frontend–backend y base de datos. | [Ver repo](https://github.com/MateoAuz/SegurosApp) |
-| 🎓 **SPINO WebApp Educativa** | WebApp estilo juego educativo. | [Ver repo](https://github.com/usuario/TowerDefense) |
+| 🎮 **RexGames** | Tienda de videojuegos en línea con arquitectura por capas. | [Ver repo](https://github.com/Boris2403/RexGame) |
+| 🚗 **AutoPremium** | Plataforma de compra y venta de autos. | [Ver repo](https://github.com/jonathan-jiron/Productos) |
+| 💼 **Gestión de Seguros Médicos** | Integración frontend–backend y base de datos. | [Ver repo](https://github.com/MateoAuz/PlataformaSeguros) |
+| 🎓 **SPINO WebApp Educativa** | WebApp estilo juego educativo. | [Ver repo](https://github.com/Boris2403/SPINO) |
 
 ---
 
