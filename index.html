@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeffApps | Desarrollo Web, Apps Móviles y Sistemas a Medida en Ecuador</title>
+  <meta name="description" content="Creamos páginas web de alta conversión, aplicaciones móviles y sistemas de agendamiento para negocios en Ambato y todo Ecuador." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN (Cero compilación compleja en GitHub Pages) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            carbon: '#161616',
+            surface: '#1F1F23',
+            sefforange: '#F24405',
+            seffhover: '#D93B04',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-carbon text-white font-sans antialiased overflow-x-hidden selection:bg-sefforange selection:text-white">
+
+  <!-- WCAG 2.4.1 Evitar bloques -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-sefforange focus:text-white focus:rounded-lg font-medium">
+    Saltar al contenido principal
+  </a>
+
+  <!-- Header Sticky Minimalista (Ley de Hick: máx 4 opciones) -->
+  <header class="sticky top-0 z-40 bg-carbon/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <!-- Logo SVG Oficial SeffApps -->
+      <a href="#" class="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sefforange rounded-lg p-1" aria-label="Inicio SeffApps">
+        <svg class="w-9 h-9 shrink-0 transition-transform duration-200 group-hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="22" fill="#1F1F23"/>
+          <path d="M30 22H70V34H42V44H70V78H30V66H58V56H30V22Z" fill="#F24405"/>
+          <path d="M24 18C24 14.6863 26.6863 12 30 12H70C73.3137 12 76 14.6863 76 18V28H68V20H32V28H24V18Z" fill="#FFFFFF"/>
+          <path d="M24 72H32V80H68V72H76V82C76 85.3137 73.3137 88 70 88H30C26.6863 88 24 85.3137 24 82V72Z" fill="#FFFFFF"/>
+        </svg>
+        <span class="font-display font-extrabold text-2xl tracking-tight">
+          <span class="text-white">Seff</span><span class="text-sefforange">Apps</span>
+        </span>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <nav aria-label="Navegación principal" class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="#soluciones" class="hover:text-white transition-colors py-2">Soluciones</a>
+        <a href="#proyectos" class="hover:text-white transition-colors py-2">Portafolio & Apps</a>
+        <a href="./nivelatio/" class="inline-flex items-center gap-1.5 text-zinc-300 hover:text-sefforange transition-colors py-2">
+          <span>Nivelatio App</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+        </a>
+      </nav>
+
+      <!-- CTA Principal (Ley de Fitts: min 44px altura) -->
+      <a href="https://wa.me/593999999999?text=Hola%20SeffApps,%20me%20interesa%20cotizar%20una%20soluci%C3%B3n%20digital%20para%20mi%20negocio." 
+         target="_blank" rel="noopener noreferrer"
+         class="min-h-[44px] px-5 inline-flex items-center justify-center rounded-xl bg-sefforange hover:bg-seffhover active:scale-[0.98] text-white font-semibold text-sm transition-all shadow-lg shadow-sefforange/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-carbon focus-visible:ring-sefforange">
+        Cotizar Proyecto
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section Asimétrico -->
+    <section class="py-20 lg:py-28 border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface border border-white/10 text-xs font-semibold uppercase tracking-widest text-sefforange">
+            Ingeniería de Software • Ambato, Ecuador
+          </div>
+          
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
+            Software, páginas web y apps que <span class="text-sefforange">convierten visitas en clientes.</span>
+          </h1>
+          
+          <p class="text-zinc-300 text-lg leading-relaxed max-w-2xl">
+            Diseñamos plataformas rápidas, sistemas de agendamiento directo por WhatsApp y aplicaciones móviles a medida para clínicas, comercios y empresas que buscan operar sin fricciones.
+          </p>
+
+          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="https://wa.me/593999999999?text=Hola%20SeffApps,%20quiero%20informaci%C3%B3n%20sobre%20sus%20planes%20web%20y%20apps." 
+               target="_blank" rel="noopener noreferrer"
+               class="min-h-[48px] px-7 inline-flex items-center justify-center rounded-xl bg-sefforange hover:bg-seffhover active:scale-[0.98] text-white font-semibold transition-all">
+              Hablar por WhatsApp
+            </a>
+            <a href="#soluciones" 
+               class="min-h-[48px] px-7 inline-flex items-center justify-center rounded-xl bg-surface hover:bg-white/10 border border-white/15 text-white font-semibold transition-all">
+              Explorar Servicios
+            </a>
+          </div>
+          <p class="text-xs text-zinc-400">
+            Planes mensuales accesibles • Soporte técnico directo en Ecuador
+          </p>
+        </div>
+
+        <!-- Tarjeta de Producto Destacado / Acceso a Nivelatio -->
+        <div class="lg:col-span-5">
+          <div class="bg-surface border border-white/10 rounded-2xl p-7 space-y-6 shadow-2xl">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold uppercase tracking-widest text-zinc-400">Ecosistema Propio</span>
+              <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-sefforange/15 text-sefforange border border-sefforange/30">
+                App Publicada
+              </span>
+            </div>
+
+            <div class="space-y-2">
+              <h2 class="font-display text-2xl font-bold text-white">Nivelatio Educación</h2>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Nuestra aplicación móvil educativa disponible para Android, diseñada con arquitectura nativa de alto rendimiento y experiencia gamificada.
+              </p>
+            </div>
+
+            <div class="pt-2 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+              <a href="./nivelatio/" 
+                 class="min-h-[44px] flex-1 px-4 inline-flex items-center justify-center gap-2 rounded-xl bg-white text-carbon hover:bg-zinc-200 font-semibold text-sm transition-colors">
+                <span>Ir a Nivelatio</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soluciones (Bento Grid limpio, cero relleno IA) -->
+    <section id="soluciones" class="py-20 lg:py-28 border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
+        <div class="max-w-2xl space-y-3">
+          <span class="text-xs font-semibold uppercase tracking-widest text-sefforange">Servicios Especializados</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight">Tecnología práctica para vender más</h2>
+          <p class="text-zinc-300 leading-relaxed">
+            Sin contratos amarrados ni costos ocultos. Entregamos herramientas listas para captar clientes desde el primer día.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Servicio 1 -->
+          <article class="bg-surface border border-white/10 hover:border-sefforange/50 rounded-2xl p-7 flex flex-col justify-between transition-all hover:-translate-y-0.5">
+            <div class="space-y-4">
+              <div class="w-11 h-11 rounded-xl bg-sefforange/15 text-sefforange flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+              </div>
+              <h3 class="font-display text-xl font-bold">Landing Pages & Citas Web</h3>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Ideales para clínicas dentales, estéticas, veterinarias y consultorios. Incluye agendamiento directo a WhatsApp, dominio propio y posicionamiento local en Google.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10">
+              <a href="https://wa.me/593999999999?text=Hola%20SeffApps,%20me%20interesa%20una%20Landing%20Page%20con%20agendamiento." target="_blank" rel="noopener noreferrer" class="min-h-[44px] inline-flex items-center text-sm font-semibold text-sefforange hover:underline">
+                Solicitar demo web →
+              </a>
+            </div>
+          </article>
+
+          <!-- Servicio 2 -->
+          <article class="bg-surface border border-white/10 hover:border-sefforange/50 rounded-2xl p-7 flex flex-col justify-between transition-all hover:-translate-y-0.5">
+            <div class="space-y-4">
+              <div class="w-11 h-11 rounded-xl bg-sefforange/15 text-sefforange flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+              </div>
+              <h3 class="font-display text-xl font-bold">Aplicaciones Móviles</h3>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Desarrollo de apps nativas y multiplataforma (Android / iOS) para academias, gimnasios, startups y productos digitales con publicación en tiendas oficiales.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10">
+              <a href="https://wa.me/593999999999?text=Hola%20SeffApps,%20quiero%20cotizar%20el%20desarrollo%20de%20una%20App%20M%C3%B3vil." target="_blank" rel="noopener noreferrer" class="min-h-[44px] inline-flex items-center text-sm font-semibold text-sefforange hover:underline">
+                Consultar desarrollo móvil →
+              </a>
+            </div>
+          </article>
+
+          <!-- Servicio 3 -->
+          <article class="bg-surface border border-white/10 hover:border-sefforange/50 rounded-2xl p-7 flex flex-col justify-between transition-all hover:-translate-y-0.5">
+            <div class="space-y-4">
+              <div class="w-11 h-11 rounded-xl bg-sefforange/15 text-sefforange flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z"/></svg>
+              </div>
+              <h3 class="font-display text-xl font-bold">Menús QR & Catálogos Web</h3>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Sistemas de pedidos interactivos para restaurantes, cafeterías y tiendas. Tus clientes arman su pedido y te llega ordenado al WhatsApp sin comisiones de terceros.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10">
+              <a href="https://wa.me/593999999999?text=Hola%20SeffApps,%20me%20interesa%20un%20Men%C3%BA%20Digital%20QR%20o%20Cat%C3%A1logo%20Web." target="_blank" rel="noopener noreferrer" class="min-h-[44px] inline-flex items-center text-sm font-semibold text-sefforange hover:underline">
+                Ver opciones de catálogo →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portafolio / Proyectos -->
+    <section id="proyectos" class="py-20 lg:py-28">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-10">
+        <div class="max-w-2xl space-y-3">
+          <span class="text-xs font-semibold uppercase tracking-widest text-sefforange">Desarrollos Recientes</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight">Productos y demos en producción</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Proyecto 1: Nivelatio -->
+          <div class="bg-surface border border-white/10 rounded-2xl p-7 flex flex-col justify-between gap-6">
+            <div class="space-y-3">
+              <span class="text-xs font-semibold text-sefforange uppercase tracking-wider">App Móvil • Flutter & Android</span>
+              <h3 class="font-display text-2xl font-bold">Nivelatio</h3>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Plataforma móvil de aprendizaje y práctica interactiva. Accede a su portal oficial, políticas de privacidad y enlaces de descarga.
+              </p>
+            </div>
+            <div>
+              <a href="./nivelatio/" class="min-h-[44px] px-5 inline-flex items-center justify-center rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm transition-colors">
+                Abrir portal de Nivelatio →
+              </a>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Demos Clínicas -->
+          <div class="bg-surface border border-white/10 rounded-2xl p-7 flex flex-col justify-between gap-6">
+            <div class="space-y-3">
+              <span class="text-xs font-semibold text-sefforange uppercase tracking-wider">Sector Salud • Web & Agendamiento</span>
+              <h3 class="font-display text-2xl font-bold">Sistema Clínico & Reservas</h3>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Arquitectura web diseñada para consultorios odontológicos y médicos en Ambato con flujo de reserva en 2 pasos y confirmación automática por WhatsApp.
+              </p>
+            </div>
+            <div>
+              <a href="https://wa.me/593999999999?text=Hola%20SeffApps,%20quiero%20ver%20una%20demo%20para%20mi%20cl%C3%ADnica%20o%20negocio." target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-5 inline-flex items-center justify-center rounded-xl bg-sefforange hover:bg-seffhover text-white font-semibold text-sm transition-colors">
+                Pedir demo personalizada →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-12 bg-black/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-zinc-400">
+      <div class="flex items-center gap-2">
+        <span class="font-display font-bold text-white">Seff<span class="text-sefforange">Apps</span></span>
+        <span>• Ambato, Ecuador</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="./nivelatio/" class="hover:text-white transition-colors">Nivelatio</a>
+        <a href="./app-ads.txt" class="hover:text-white transition-colors">app-ads.txt</a>
+        <a href="https://github.com/Boris2403" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
